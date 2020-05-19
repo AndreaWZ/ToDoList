@@ -8,7 +8,23 @@
     <title>To Do List</title>
 </head>
 <body>
-    <h1>To Do List</h1>
+    <div id="wrapper">
+        <h1>To Do List</h1>
+        <button id="delete" onclick="deleteList()">Delete List</button>
+        <button>Clean Up List</button>
+        <form>
+            <input class="text" type="text" placeholder="add item"/>
+            <select class="select">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+            </select>
+            <input class="submit" type="submit" value="Add"/>
+        </form>
+        <div id="contents"></div>
+    </div>
 </body>
 <script src="index.js"></script>
 </html>

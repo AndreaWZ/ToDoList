@@ -9,8 +9,17 @@ body {
 
 h1 {
     margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
+button {
+    margin-bottom: 15px;
+}
+
+form {
+    margin-bottom: 15px;
+}
 .select {
     background: none;
     width: 35px;

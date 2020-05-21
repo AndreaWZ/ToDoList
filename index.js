@@ -55,3 +55,9 @@ function deleteList() {
     const wrapper = $("#wrapper")[0];
     wrapper.appendChild(contentsDiv);
 }
+
+// $(".submit").click(function(){
+//     const itemName = $(".text").text();
+//     const itemPriority = $(".select");
+// });
+

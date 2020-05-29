@@ -1,12 +1,7 @@
 function deleteList() {
-    const allList = $("ul");
+    const allList = $("li");
     allList.remove();
 };
-
-$("li").click(function() {
-
-    $(this).toggleClass("completed");
-});
 
 $("#cleanUp").click(function(){
     let textList = $("li");
@@ -17,4 +12,22 @@ $("#cleanUp").click(function(){
         };
     };
 })
+
+$(".submit").on("click", function(){
+    const itemText = $("input[type='text']").val()
+    const itemPriority = $("select").val();
+
+    if(itemText === ""){
+        alert("Please enter item");
+    } else {
+        $("ul").append("<li><span><i class='fas fa-exclamation-circle'></i> " + itemPriority + "</span>" + itemText + "</li>");
+    };
+});
+
+$("ul").on('click', "li", function() {
+    $(this).toggleClass("completed");
+});
+
+
+
 
